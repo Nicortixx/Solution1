@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="miEncabezadoFavorito">Esta es mi página</h1>
+        <img src="pic_bulboff.gif" alt="Apagado" />
+        <button onclick="javascript:cambiarImagen()">Prender</button>
+        <h1>Este es otro encabezado</h1>
+    </body>
+    <script>
+        let encabezado = document.getElementById("miEncabezadoFavorito");
+        encabezado.innerHTML =  prompt("Ingrese lo que quiere que diga el encabezado");
+        encabezado.style.color = "red";
+        let cambiarImagen = function() {
+      document.getElementsByTagName("img")[0].src = "pic_bulbon.gif";  
+		}
+    </script>
+</html>

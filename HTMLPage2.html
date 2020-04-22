@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tareas</title>
+    <style>
+        body{
+                display: grid;
+                grid-template-columns: 1fr minmax(400px, 1200px) 1fr;
+                grid-template-rows: auto;
+		}
+        .screen{
+                 grid-column: 2/3;
+                 grid-row: 1/2;
+		}
+    </style>
+</head>
+<body>
+   <div id="menu" class="screen">
+        <h1> este es el menu </h1>
+   </div>
+   <div id="add" class="screen">
+        <h1> Aca se añaden tareas</h1>
+   </div>
+   <div id="lista" class="screen">
+        <h1>Aca se ve la lista de tareas</h1>
+   </div>
+   <script src="Script2.js"></script>
+</body>
+</html>
